@@ -57,6 +57,37 @@ div.manual-slide1 img {
   text-align: center;
 }
 
+.p a {
+  color: lightseagreen;
+}
+
+.p a:hover {
+  color: orange;
+}
+
+.h7 {
+  /*postのところの記事一覧*/
+  margin-top: 10%;
+  font-size: 1.8em;
+  font-family: sans-serif;
+  color: darkgray;
+}
+
+.h7 a {
+  color: #616161;
+}
+
+.h7 a:hover {
+  border: solid 0px silver; /*postの中見出しのマウスオーバー時の動作*/
+  background-color: silver;
+  color: black;
+  transition: 0.3s;
+}
+
+.post-ichiran {
+  padding: 0 15%;
+}
+
 h1 {
   padding-bottom: 0; /*HP上部の一覧*/
   padding-right: 0;
