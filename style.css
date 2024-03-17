@@ -17,15 +17,19 @@ div.manual-slide1 img {
   0% {
     opacity: 0;
   }
+
   28% {
     opacity: 1;
   }
+
   50% {
     opacity: 1;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -34,9 +38,11 @@ div.manual-slide1 img {
 .wrap {
   position: relative;
 }
+
 .bunshyo {
   padding-top: 65%;
 }
+
 .manual-slide1 {
   position: relative;
   top: 0;
@@ -78,7 +84,8 @@ div.manual-slide1 img {
 }
 
 .h7 a:hover {
-  border: solid 0px silver; /*postの中見出しのマウスオーバー時の動作*/
+  border: solid 0px silver;
+  /*postの中見出しのマウスオーバー時の動作*/
   background-color: silver;
   color: black;
   transition: 0.3s;
@@ -89,12 +96,14 @@ div.manual-slide1 img {
 }
 
 h1 {
-  padding-bottom: 0; /*HP上部の一覧*/
+  padding-bottom: 0;
+  /*HP上部の一覧*/
   padding-right: 0;
 }
 
 h2 {
-  float: bottom; /*Homeの写真スライド以下の中見出し*/
+  float: bottom;
+  /*Homeの写真スライド以下の中見出し*/
   font-size: 2.3em;
   padding-left: 15%;
   font-family: Verdana, Tahoma, sans-serif;
@@ -106,14 +115,16 @@ h2 a {
 }
 
 h2 a:hover {
-  border: solid 0px silver; /*Homeの写真スライド下の中見出しのマウスオーバー時の動作*/
+  border: solid 0px silver;
+  /*Homeの写真スライド下の中見出しのマウスオーバー時の動作*/
   background-color: silver;
   color: black;
   transition: 0.3s;
 }
 
 h3 {
-  text-align: center; /*Join Us(派生ページ)の大見出し*/
+  text-align: center;
+  /*Join Us(派生ページ)の大見出し*/
   font-size: 5em;
   font-family: Arial;
   color: white;
@@ -124,7 +135,8 @@ h3 {
 }
 
 h4 {
-  color: dimgray; /*Join Us(派生ページ)の中見出し*/
+  color: dimgray;
+  /*Join Us(派生ページ)の中見出し*/
   font-size: 2.2em;
   font-family: Arial;
   padding-left: 15%;
@@ -164,7 +176,8 @@ h7 a {
 }
 
 h7 a:hover {
-  border: solid 0px silver; /*postの中見出しのマウスオーバー時の動作*/
+  border: solid 0px silver;
+  /*postの中見出しのマウスオーバー時の動作*/
   background-color: silver;
   color: black;
   transition: 0.3s;
@@ -191,16 +204,19 @@ h8 {
 }
 
 p {
-  font-size: 1.1em; /*文章*/
+  font-size: 1.1em;
+  /*文章*/
   padding-left: 15%;
   padding-right: 15%;
   margin-bottom: 7%;
 }
 
 @media screen and (min-width: 767px) {
+
   /*ウィンドウ幅が767px以上の場合に適用*/
   ul.list {
-    list-style-type: none; /*HP上部右側にあるメニューバー*/
+    list-style-type: none;
+    /*HP上部右側にあるメニューバー*/
     font-size: 1.7em;
     font-family: Century;
     width: 700px;
@@ -210,24 +226,31 @@ p {
     padding-top: 12px;
     padding-bottom: 20px;
     float: right;
-    letter-spacing: -1em; /* 文字間を詰める */
-    white-space: nowrap; /* 自動で折り返ししない */
+    letter-spacing: -1em;
+    /* 文字間を詰める */
+    white-space: nowrap;
+    /* 自動で折り返ししない */
   }
 
   li {
-    display: inline; /*メニューバーのそれぞれの文字について*/
+    display: inline;
+    /*メニューバーのそれぞれの文字について*/
     padding-right: 30px;
-    letter-spacing: normal; /* 文字間を元に戻す */
-    white-space: normal; /* 自動で折り返し(元に戻す) */
+    letter-spacing: normal;
+    /* 文字間を元に戻す */
+    white-space: normal;
+    /* 自動で折り返し(元に戻す) */
   }
 
   li a {
-    text-decoration: none; /*メニューバーの文字にリンクを埋め込む*/
+    text-decoration: none;
+    /*メニューバーの文字にリンクを埋め込む*/
     color: darkgray;
   }
 
   li a:hover {
-    border: solid 0px lightgray; /*メニューバーのマウスオーバー時の動作*/
+    border: solid 0px lightgray;
+    /*メニューバーのマウスオーバー時の動作*/
     background-color: lightgray;
     color: lightseagreen;
     transition: 0.3s;
@@ -242,7 +265,8 @@ p {
   /*ウィンドウ幅が最大767pxまでの場合に適用*/
 
   ul {
-    list-style-type: none; /*HP上部右側にあるメニューバー*/
+    list-style-type: none;
+    /*HP上部右側にあるメニューバー*/
     font-size: 1.7em;
     font-family: Century;
     margin-left: 0;
@@ -259,12 +283,14 @@ p {
   }
 
   li a {
-    text-decoration: none; /*メニューバーの文字にリンクを埋め込む*/
+    text-decoration: none;
+    /*メニューバーの文字にリンクを埋め込む*/
     color: gray;
   }
 
   li a:hover {
-    border: solid 0px lightgray; /*メニューバーのマウスオーバー時の動作*/
+    border: solid 0px lightgray;
+    /*メニューバーのマウスオーバー時の動作*/
     background-color: lightgray;
     color: lightseagreen;
     transition: 0.3s;
@@ -297,7 +323,8 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 100; /* 重なり順を一番上にする */
+    z-index: 100;
+    /* 重なり順を一番上にする */
     cursor: pointer;
   }
 
@@ -326,17 +353,17 @@ p {
   }
 
   /* アイコンがクリックされたら真ん中の線を透明にする */
-  #drawer_input:checked ~ .drawer_open span {
+  #drawer_input:checked~.drawer_open span {
     background: rgba(255, 255, 255, 0);
   }
 
   /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-  #drawer_input:checked ~ .drawer_open span::before {
+  #drawer_input:checked~.drawer_open span::before {
     bottom: 0;
     transform: rotate(45deg);
   }
 
-  #drawer_input:checked ~ .drawer_open span::after {
+  #drawer_input:checked~.drawer_open span::after {
     top: 0;
     transform: rotate(-45deg);
   }
@@ -347,7 +374,8 @@ p {
     height: 100%;
     position: fixed;
     top: 0;
-    left: 100%; /* メニューを画面の外に飛ばす */
+    left: 100%;
+    /* メニューを画面の外に飛ばす */
     z-index: 99;
     background: #fff;
     transition: 0.5s;
@@ -359,8 +387,9 @@ p {
   }
 
   /* アイコンがクリックされたらメニューを表示 */
-  #drawer_input:checked ~ .nav_content {
-    left: 0; /* メニューを画面に入れる */
+  #drawer_input:checked~.nav_content {
+    left: 0;
+    /* メニューを画面に入れる */
   }
 }
 
@@ -444,25 +473,19 @@ html {
 }
 
 .card-media:hover .card-media-object:after {
-  background: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 52%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 52%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 52%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  background: -moz-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 52%,
+      rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 52%,
+      rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 52%,
+      rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
   opacity: 1;
 }
 
@@ -505,9 +528,11 @@ html {
 .card-media-object-social-list li:nth-child(1) {
   transition-delay: 0;
 }
+
 .card-media-object-social-list li:nth-child(2) {
   transition-delay: 75ms;
 }
+
 .card-media-object-social-list li:nth-child(3) {
   transition-delay: 150ms;
 }
@@ -545,13 +570,13 @@ html {
   transform: translateY(0);
 }
 
-.card-media-body-top-icons > svg {
+.card-media-body-top-icons>svg {
   cursor: pointer;
   margin-left: 10px;
   transition: all 300ms ease-out;
 }
 
-.card-media-body-top-icons > svg:hover {
+.card-media-body-top-icons>svg:hover {
   fill: #444;
 }
 
