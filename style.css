@@ -1,0 +1,492 @@
+div#header   {display: flex;
+
+}
+
+h1   {padding-bottom:0;    /*HP上部の一覧*/
+    padding-right: 0}
+
+h2   {
+    float:bottom;   /*Homeの写真スライド以下の中見出し*/
+    font-size: 2.3em;
+    padding-left: 15%;
+    font-family: Verdana, Tahoma, sans-serif;
+
+}
+
+h2 a   {
+    text-decoration: none;
+    color: gray;
+}
+
+h2 a:hover   {
+    border: solid 0px silver;   /*Homeの写真スライド下の中見出しのマウスオーバー時の動作*/
+    background-color: silver;
+    color:black;
+    transition: .3s;
+}
+
+h3   {
+    text-align: center;   /*Join Us(派生ページ)の大見出し*/
+    font-size: 5em;
+    font-family: Arial;
+    color:white;
+    background-image:linear-gradient(lightseagreen, aqua);
+    padding: 7rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path:polygon(0 0,100% 10%, 1005 90%, 0 100%)
+
+}
+
+h4   {
+    color: dimgray;    /*Join Us(派生ページ)の中見出し*/
+    font-size: 2.2em;
+    font-family: Arial;
+    padding-left: 15%;
+
+}
+
+h5   {
+    font-size: 1.5em;
+    font-family: Arial;
+    margin-bottom: 3em;
+    padding-left:15%;
+    padding-right:5%;
+    color: #616161;
+
+}
+
+h6   {   /*aboutの名前の由来一覧のところ*/
+    font-size:1.7em; 
+    color: white;
+    background-color: lightgreen;
+    padding-left: 18%;
+    margin-top:0%;
+    margin-bottom: 2%;
+    -webkit-clip-path: polygon(15% 0,600px 0, 800px 100px, 15% 100px);
+    clip-path: polygon(15% 0,600px 0, 800px 100px, 15% 100px);
+
+
+}
+
+
+h7   {   /*postのところの記事一覧*/
+    margin-top: 10%;
+    font-size:1.8em;
+    font-family: sans-serif;
+    color: darkgray;  
+}
+
+h7 a   {
+  color: #616161;
+}
+
+h7 a:hover   {
+  border: solid 0px silver;   /*postの中見出しのマウスオーバー時の動作*/
+    background-color: silver;
+    color:black;
+    transition: .3s;
+}
+
+.post-ichiran {
+  padding:0 15%;
+}
+
+.hrpost   {     /*傍線の部分のレイアウト*/
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h8 {
+  color: #616161;
+  font-size: 1.5em;
+  font-family: Arial;
+  margin-bottom: 3em;
+  padding-left:15%;
+  padding-right:5%;
+  color: #616161;
+}
+
+
+
+p   {
+    font-size: 1.1em;    /*文章*/
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 7%
+}
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+    ul.list   {list-style-type: none;   /*HP上部右側にあるメニューバー*/
+      font-size: 1.7em;
+      font-family: Century;
+      width: 700px;
+      margin-left: 0;
+      padding-left: 0;
+      padding-left: 20%;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      float: right;
+      letter-spacing: -1em; /* 文字間を詰める */
+      white-space: nowrap; /* 自動で折り返ししない */
+  }
+
+  
+  li   { display: inline;     /*メニューバーのそれぞれの文字について*/
+      padding-right: 30px;
+      letter-spacing: normal; /* 文字間を元に戻す */
+      white-space: normal; /* 自動で折り返し(元に戻す) */
+    }
+  
+  li a   {text-decoration: none;   /*メニューバーの文字にリンクを埋め込む*/
+      color: darkgray}
+  
+  li a:hover   {
+      border: solid 0px lightgray;  /*メニューバーのマウスオーバー時の動作*/
+      background-color: lightgray;
+      color: lightseagreen;
+      transition: .3s;
+  }
+
+  .drawer_hidden   {
+    display: none;
+  }
+}
+  
+
+
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+
+  ul   {list-style-type: none;   /*HP上部右側にあるメニューバー*/
+    font-size: 1.7em;
+    font-family: Century;
+    margin-left: 0;
+    padding-left: 0;
+    padding-left: 20%;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    float: right;
+  }
+
+  li   {      /*メニューバーのそれぞれの文字について*/
+    padding-right: 30px}
+
+  li a   {text-decoration: none;   /*メニューバーの文字にリンクを埋め込む*/
+    color: gray}
+
+  li a:hover   {
+    border: solid 0px lightgray;  /*メニューバーのマウスオーバー時の動作*/
+    background-color: lightgray;
+    color: lightseagreen;
+    transition: .3s;
+  }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background: #fff;
+    }
+    
+    .logo {
+      font-size: 24px;
+    }
+    
+    /* ここから下がハンバーガーメニューに関するCSS */
+      
+    /* チェックボックスを非表示にする */
+    .drawer_hidden {
+      display: none;
+    }
+    
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer_open {
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 100;/* 重なり順を一番上にする */
+      cursor: pointer;
+    }
+    
+    /* ハンバーガーメニューのアイコン */
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background: #333;
+      transition: 0.5s;
+      position: absolute;
+    }
+    
+    /* 三本線の一番上の棒の位置調整 */
+    .drawer_open span:before {
+      bottom: 8px;
+    }
+    
+    /* 三本線の一番下の棒の位置調整 */
+    .drawer_open span:after {
+      top: 8px;
+    }
+    
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer_input:checked ~ .drawer_open span {
+      background: rgba(255, 255, 255, 0);
+    }
+    
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer_input:checked ~ .drawer_open span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+    
+    #drawer_input:checked ~ .drawer_open span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+      
+    /* メニューのデザイン*/
+    .nav_content {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 100%; /* メニューを画面の外に飛ばす */
+      z-index: 99;
+      background: #fff;
+      transition: .5s;
+    }
+    
+    /* メニュー黒ポチを消す */
+    .nav_list {
+      list-style: none;
+    }
+    
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer_input:checked ~ .nav_content {
+      left: 0;/* メニューを画面に入れる */
+    }
+  }
+
+
+/*ポストの投稿機能*/
+
+
+html {
+    background-color: #fefefe;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    margin: 50px auto 0;
+    width: 700px;
+  }
+  
+  .u-float-right {
+    float: right;
+  }
+  
+  .u-flex-center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .subtle {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .card-media {
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    height: 125px;
+    margin-bottom: 25px;
+    transition: all 300ms ease-out;
+    width: 100%;
+  }
+  
+  .card-media:hover {
+    box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+  }
+  
+  .card-media-object-container {
+    background: none;
+    float: left;
+    height: 100%;
+    width: 35%;
+    position: relative;
+  }
+  
+  .card-media-object {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .card-media-object:after {
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 300ms ease-out;
+    z-index: 10;
+  }
+  
+  .card-media:hover .card-media-object:after {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.4) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    opacity: 1;
+  }
+  
+  .card-media-object-tag {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 2px 7px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .card-media-object-social-list {
+    bottom: 4px;
+    left: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 20;
+  }
+  
+  .card-media-object-social-list li {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    margin-right: 6px;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(5px);
+    transition: all 300ms ease-out;
+    width: 30px;
+  }
+  
+  .card-media:hover .card-media-object-social-list li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card-media-object-social-list li:nth-child(1) {
+    transition-delay: 0;
+  }
+  .card-media-object-social-list li:nth-child(2) {
+    transition-delay: 75ms;
+  }
+  .card-media-object-social-list li:nth-child(3) {
+    transition-delay: 150ms;
+  }
+  
+  .card-media-object-social-list-item-additional {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 7px;
+    text-align: center;
+  }
+  
+  .card-media-body {
+    background-color: #fff;
+    float: left;
+    height: 100%;
+    padding: 12px 15px;
+    position: relative;
+    width: 65%;
+  }
+  
+  .card-media-body-top {
+    display: block;
+  }
+  
+  .card-media-body-top-icons {
+    margin-top: -2px;
+    opacity: 0;
+    transition: all 300ms ease-out;
+    transform: translateY(-5px);
+  }
+  
+  .card-media:hover .card-media-body-top-icons {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card-media-body-top-icons > svg {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 300ms ease-out;
+  }
+  
+  .card-media-body-top-icons > svg:hover {
+    fill: #444;
+  }
+  
+  .card-media-body-heading {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .card-media-body-supporting-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    opacity: 1;
+    padding: 0 15px;
+    transition: all 300ms ease-out;
+    width: 100%;
+  }
+  
+  .card-media:hover .card-media-body-supporting-bottom {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  
+  .card-media-body-supporting-bottom-text {
+    display: inline-block;
+  }
+  
+  .card-media-body-supporting-bottom-reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 300ms ease-out;
+  }
+  
+  .card-media:hover .card-media-body-supporting-bottom-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card-media-link {
+    color: #41C1F2;
+    text-decoration: none;
+  }
