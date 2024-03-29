@@ -619,3 +619,36 @@ html {
   color: #41c1f2;
   text-decoration: none;
 }
+
+
+table {
+  table-layout: fixed;
+   width: 80%;
+  margin:auto;
+  position: relative;
+  border-collapse: collapse; 
+  background-color: #f6f6f6;
+}/* Spacing */
+td, th {
+  border: 1px solid #999;
+  padding: 20px;
+}
+th {
+  background: rgb(54, 177, 171);
+  color: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+.primary{
+  background-color: #000000
+}
+
+tfoot > tr  {
+  background: black;
+  color: white;
+}
+tbody > tr:hover {
+  background-color: #fbc933;
+}
